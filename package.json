@@ -1,0 +1,20 @@
+{
+  "name": "hype-dracula",
+  "description": "Theme for Hyper, a Terminal emulator.",
+  "author": "Paul Anthony Webb <netopwibby@thenetwork.email> (https://pw-software.com)",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://paulwebb.software/NetOperatorWibby/hype-dracula"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://paulwebb.software/NetOperatorWibby/hype-dracula/master/LICENSE"
+  },
+  "keywords": [
+    "hyper",
+    "theme",
+    "awesome"
+  ],
+  "dependencies": {}
+}
