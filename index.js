@@ -1,5 +1,4 @@
-/* jshint undef: true, unused: true, esversion: 6 */
-/* global exports */
+"use strict";
 
 
 
@@ -7,36 +6,36 @@ exports.decorateConfig = (config) => {
   const font = config.fontFamily;
 
   return Object.assign({}, config, {
-    cursorColor: "#878787",
-    foregroundColor: "#fff",
-    backgroundColor: "#292e38",
+    cursorColor:      "#878787",
+    foregroundColor:  "#fff",
+    backgroundColor:  "#292e38",
 
     colors: {
-      black: "#000",
-      red: "#ff625d",
-      green: "#50f583",
-      yellow: "#f2f793",
-      blue: "#c39ffa",
-      magenta: "#ff87ca",
-      cyan: "#8feafd",
-      white: "#b7b7b7",
+      black:    "#000",
+      red:      "#ff625d",
+      green:    "#50f583",
+      yellow:   "#f2f793",
+      blue:     "#c39ffa",
+      magenta:  "#ff87ca",
+      cyan:     "#8feafd",
+      white:    "#b7b7b7",
 
-      lightBlack: "#5b5b5b",
-      lightRed: "#ff625d",
-      lightGreen: "#50f583",
-      lightYellow: "#f2f793",
-      lightBlue: "#c39ffa",
+      lightBlack:   "#5b5b5b",
+      lightRed:     "#ff625d",
+      lightGreen:   "#50f583",
+      lightYellow:  "#f2f793",
+      lightBlue:    "#c39ffa",
       lightMagenta: "#ff87ca",
-      lightCyan: "#8feafd",
-      lightWhite: "#e2e2e2"
+      lightCyan:    "#8feafd",
+      lightWhite:   "#e2e2e2"
     },
 
     css: `
-			${config.css || ""}
+      ${config.css || ""}
 
       .hyper_main,
-      .tabs_borderShim,
-			.tab_tab {
+      .tab_tab,
+      .tabs_borderShim {
         border: none !important;
       }
 
@@ -44,13 +43,13 @@ exports.decorateConfig = (config) => {
         top: 0 !important; right: 0 !important; left: 0 !important;
       }
 
-      .tabs_nav,
-      .footer_footer {
+      .footer_footer,
+      .tabs_nav {
         font-family: ${font} !important;
       }
 
-      .tabs_nav,
-      .footer_footer {
+      .footer_footer,
+      .tabs_nav {
         background-color: #1d1e21 !important;
       }
 
@@ -59,7 +58,7 @@ exports.decorateConfig = (config) => {
         opacity: 1 !important;
       }
 
-      .footer_footer:before {
+      .footer_footer::before {
         display: none !important;
       }
 
@@ -68,13 +67,13 @@ exports.decorateConfig = (config) => {
       }
 
       .tab_active,
-      .terms_termGroupActive {
-        background-color: #292d2f !important;
+      .terms_terms {
+        background-color: #292e38 !important;
       }
 
-			.tab_textActive {
+      .tab_textActive {
         opacity: 1 !important;
-			}
-		`
+      }
+    `
   });
 };
