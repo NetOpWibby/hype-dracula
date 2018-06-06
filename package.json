@@ -1,8 +1,8 @@
 {
   "name": "hype-dracula",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Theme for Hyper, a Terminal emulator.",
-  "license": "MIT",
+  "license": "UNLICENSE",
   "repository": "https://git.inc.sh/NetOperatorWibby/hype-dracula",
   "author": "Paul Anthony Webb <paul@inc.sh>",
   "main": "index.js",

@@ -43,6 +43,20 @@ exports.decorateConfig = (config) => {
         top: 0 !important; right: 0 !important; left: 0 !important;
       }
 
+      .splitpane_divider {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        border: 0;
+        margin: 0;
+      }
+
+      .splitpane_divider_vertical {
+        width: 2px;
+      }
+
+      .splitpane_divider_horizontal {
+        height: 2px;
+      }
+
       .footer_footer,
       .tabs_nav {
         font-family: ${font} !important;
@@ -73,6 +87,10 @@ exports.decorateConfig = (config) => {
 
       .tab_textActive {
         opacity: 1 !important;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.1);
       }
     `
   });

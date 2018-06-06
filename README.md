@@ -41,4 +41,4 @@ Or, you can install `hype-dracula` manually by adding it to the plugins list in 
 
 ### License
 
-MIT © [Paul Anthony Webb](https://pw-software.com)
+UNLICENSE
