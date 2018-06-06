@@ -2,13 +2,14 @@
 
 
 
-exports.decorateConfig = (config) => {
+exports.decorateConfig = config => {
   const font = config.fontFamily;
 
   return Object.assign({}, config, {
     cursorColor:      "#878787",
     foregroundColor:  "#fff",
     backgroundColor:  "#292e38",
+    borderColor:      "rgba(255, 255, 255, 0.1)",
 
     colors: {
       black:    "#000",
@@ -87,10 +88,6 @@ exports.decorateConfig = (config) => {
 
       .tab_textActive {
         opacity: 1 !important;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 255, 255, 0.1) !important;
       }
     `
   });
